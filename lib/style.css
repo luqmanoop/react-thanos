@@ -1,0 +1,13 @@
+.thanos {
+  width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.gauntlet {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background: url(assets/images/thanos_snap.png) -24px -9px;
+  overflow: visible;
+}
