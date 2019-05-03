@@ -1,13 +1,19 @@
 .thanos {
-  width: 80px;
-	height: 80px;
-	cursor: pointer;
+  width: 43px;
+  height: 69px;
+  position: relative;
 }
 
 .gauntlet {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background: url(assets/images/thanos_snap.png) -24px -9px;
+  background: url(./assets/images/thanos_idle.png) -24px -9px;
+  cursor: pointer;
   overflow: visible;
+  position: absolute;
+}
+
+.hide {
+  visibility: hidden;
 }
