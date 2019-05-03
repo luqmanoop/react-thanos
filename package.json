@@ -1,14 +1,22 @@
 {
   "name": "thanos-snap",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Thanos snap effect",
   "directories": {
     "lib": "lib"
   },
+  "main": "dist/thanos-snap.js",
+  "module": "dist/thanos-snap-es.js",
+  "source": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "bundle": "rollup -c",
+    "build": "npm run clean && npm run bundle && npm pack"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codeshifu/thanos-snap.git"
@@ -21,7 +29,23 @@
   },
   "homepage": "https://github.com/codeshifu/thanos-snap#readme",
   "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.0.0",
+    "microbundle": "0.11.0",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "rimraf": "2.6.3",
+    "rollup": "1.10.1",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-copy": "1.1.0",
+    "rollup-plugin-node-resolve": "4.2.3",
+    "rollup-plugin-peer-deps-external": "2.2.0",
+    "rollup-plugin-postcss": "2.0.3",
+    "rollup-plugin-url": "2.2.1"
+  },
+  "peerDependencies": {
+    "react": "16.8"
   }
 }
