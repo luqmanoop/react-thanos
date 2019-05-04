@@ -1,12 +1,12 @@
 {
-  "name": "thanos-snap",
-  "version": "1.0.0",
-  "description": "Thanos snap effect",
+  "name": "react-thanos",
+  "version": "0.0.0",
+  "description": "React (hooks⚓) implementation of Google's famous \"Thanos\" easter egg",
   "directories": {
     "lib": "lib"
   },
-  "main": "dist/thanos-snap.js",
-  "module": "dist/thanos-snap-es.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "source": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -14,20 +14,28 @@
     "build": "npm run clean && npm run bundle && npm pack"
   },
   "files": [
-    "dist",
-    "README.md"
+		"dist",
+    "README.md",
+		"LICENSE.md"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeshifu/thanos-snap.git"
+    "url": "git+https://github.com/codeshifu/react-thanos.git"
   },
-  "keywords": [],
+  "keywords": [
+		"thanos",
+		"snap",
+		"gauntlet",
+		"decimation",
+		"react",
+		"google"
+	],
   "author": "Luqman Olushi <olushilukmon03@gmail.com> (https://codeshifu.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codeshifu/thanos-snap/issues"
+    "url": "https://github.com/codeshifu/react-thanos/issues"
   },
-  "homepage": "https://github.com/codeshifu/thanos-snap#readme",
+  "homepage": "https://github.com/codeshifu/react-thanos#readme",
   "devDependencies": {
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
@@ -46,6 +54,7 @@
     "rollup-plugin-url": "2.2.1"
   },
   "peerDependencies": {
-    "react": "16.8"
+		"react": "16.8.x",
+		"react-dom": "16.8.x"
   }
 }
