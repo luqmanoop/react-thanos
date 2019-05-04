@@ -13,9 +13,9 @@ export default {
 	plugins: [
 		copy({
 			targets: {
-				"lib/assets/thanos_snap_sound.mp3": "dist/assets/thanos_snap_sound.mp3",
+				"lib/assets/thanos_snap_sound.mp3": "dist/assets/sound.mp3",
 				"lib/assets/thanos_reverse_sound.mp3":
-					"dist/assets/thanos_reverse_sound.mp3"
+					"dist/assets/reverse.mp3"
 			}
 		}),
 		url({
