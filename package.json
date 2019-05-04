@@ -1,7 +1,7 @@
 {
   "name": "react-thanos",
   "version": "0.0.0",
-  "description": "React (hooks⚓) implementation of Google's famous \"Thanos\" easter egg",
+  "description": "⚓ React hooks implementation of Google's famous \"Thanos\" easter egg",
   "directories": {
     "lib": "lib"
   },
