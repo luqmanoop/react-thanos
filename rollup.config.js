@@ -3,12 +3,13 @@ import copy from "rollup-plugin-copy";
 import resolve from "rollup-plugin-node-resolve";
 import postcss from "rollup-plugin-postcss";
 import url from "rollup-plugin-url";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
+
 import pkg from "./package.json";
 
 
 export default {
 	input: "lib/index.js",
-	external: ["react"],
 	plugins: [
 		copy({
 			targets: {
@@ -18,14 +19,14 @@ export default {
 			}
 		}),
 		url({
-			limit: 250 * 1024,
-			exclude: ["**/*.mp3"]
+			limit: 250 * 1024
 		}),
 		postcss(),
 		babel({
 			exclude: "node_modules/**"
 		}),
-		resolve()
+		resolve(),
+		peerDepsExternal(),
 	],
 	output: [
 		{
