@@ -58,5 +58,8 @@ shortly after [Avengers: Endgame](https://www.imdb.com/title/tt4154796/) premier
 [Assets](https://github.com/codeshifu/react-thanos/tree/master/lib/assets)
 used in this project were downloaded from Google. I own no rights to them.
 
+## Contributing
+Feel free to send in contributions of any kind. All are welcome 🙂
+
 ## License
 **react-thanos** is licensed under [MIT](https://github.com/codeshifu/react-thanos/blob/master/LICENSE)
