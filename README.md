@@ -1,6 +1,6 @@
 <div align="center">
 <img src="https://i.imgur.com/1XVqHMa.png">
-<h2>react-thanos</h2>
+<h1>react-thanos</h1>
 <p>React hooks implementation of Google's  <a href="http://google.com/search?q=thanos"><strong>Thanos</strong></a> easter egg</p>
 </div>
 
@@ -29,6 +29,11 @@ import Thanos from "react-thanos";
   onSnapReverse={() => console.log("Avengers assemble!") }
 />
 ```
+
+## Examples
+See [examples](https://github.com/codeshifu/react-thanos/tree/master/examples) folder
+
+Live demo https://stupefied-keller-6c68c5.netlify.com/
 
 ## API (props)
 

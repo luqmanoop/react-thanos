@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ccc;
+}
+
+.app {
+	font-family: "Open Sans", Verdana, sans-serif;
+	padding: 20px 20px 0;
+	max-width: 960px;
+	margin: 50px auto 0;
+	font-size: 18px;
+	background-color: #fcfcfc;
+	border: 2px solid #333;
+	color: #333;
+	transition: all .55s;
+}
+
+header {
+	display: flex;
+}
+
+.intro {
+	display: inline-block;
+	background-color: #0F2417;
+	color: #EFF8F3;
+	padding: 5px;
+	margin: 10px 0;
+}
+
+header > h1 {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+p {
+	padding: 5px 0;
+}
+
+.night {
+	background-color: #0F2417;
+	color: #EFF8F3;
+	border-color: #EFF8F3;
+}
+
+.night .intro {
+	background-color: #72777B;
+}
