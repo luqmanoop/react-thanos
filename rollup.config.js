@@ -1,41 +1,34 @@
 import babel from "rollup-plugin-babel";
-import copy from "rollup-plugin-copy";
 import resolve from "rollup-plugin-node-resolve";
-import postcss from "rollup-plugin-postcss";
-import url from "rollup-plugin-url";
+import rebase from "rollup-plugin-rebase";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 import pkg from "./package.json";
 
+const sourcemap = false;
 
 export default {
 	input: "lib/index.js",
 	plugins: [
-		copy({
-			targets: {
-				"lib/assets/thanos_snap_sound.mp3": "dist/assets/sound.mp3",
-				"lib/assets/thanos_reverse_sound.mp3":
-					"dist/assets/reverse.mp3"
-			}
+		rebase({
+			assetFolder: "assets"
 		}),
-		url({
-			limit: 250 * 1024
-		}),
-		postcss(),
 		babel({
 			exclude: "node_modules/**"
 		}),
 		resolve(),
-		peerDepsExternal(),
+		peerDepsExternal()
 	],
 	output: [
 		{
 			file: pkg.module,
-			format: "es"
+			format: "es",
+			sourcemap
 		},
 		{
 			file: pkg.main,
-			format: "cjs"
+			format: "cjs",
+			sourcemap
 		}
 	]
 };
