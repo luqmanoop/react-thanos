@@ -1,6 +1,7 @@
 .thanos {
   width: 43px;
-  height: 69px;
+	height: 69px;
+	display: inline-block;
   position: relative;
 }
 
