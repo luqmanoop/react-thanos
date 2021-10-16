@@ -16,8 +16,8 @@
 	},
 	"files": [
 		"dist",
-		"README.md",
-		"LICENSE.md"
+		"readme.md",
+		"license.md"
 	],
 	"repository": {
 		"type": "git",

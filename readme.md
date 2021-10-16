@@ -62,4 +62,4 @@ used in this project were downloaded from Google. I own no rights to them.
 Feel free to send in contributions of any kind. All are welcome 🙂
 
 ## License
-**react-thanos** is licensed under [MIT](https://github.com/codeshifu/react-thanos/blob/master/LICENSE)
+**react-thanos** is licensed under [MIT](https://github.com/codeshifu/react-thanos/blob/master/license)
