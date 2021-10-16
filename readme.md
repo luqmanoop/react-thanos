@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://i.imgur.com/1XVqHMa.png">
 <h1>react-thanos</h1>
-<p>React hooks implementation of Google's  <a href="http://google.com/search?q=thanos"><strong>Thanos</strong></a> easter egg</p>
+<p>React hooks implementation of Google's  <a href="https://www.youtube.com/watch?v=ybNtKpROwes"><strong>Thanos</strong></a> easter egg</p>
 </div>
 
 ## Prerequisite
