@@ -12,13 +12,13 @@
 }
 
 .gauntlet.snap {
-  background: url("https://raw.githubusercontent.com/codeshifu/react-thanos/master/lib/assets/thanos_snap.png")
+  background: url("./assets/thanos_snap.png")
     no-repeat 0 0;
   animation-delay: 0.5s;
 }
 
 .gauntlet.snap-reverse {
-  background: url("https://raw.githubusercontent.com/codeshifu/react-thanos/master/lib/assets/thanos_time.png")
+  background: url("./assets/thanos_time.png")
     no-repeat 0 0;
 }
 
