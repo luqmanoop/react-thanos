@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #ccc;
+	background-color: #333;
 }
 
 .app {
@@ -14,40 +14,57 @@ body {
 	max-width: 960px;
 	margin: 50px auto 0;
 	font-size: 18px;
-	background-color: #fcfcfc;
 	border: 2px solid #333;
 	color: #333;
-	transition: all .55s;
+	transition: all 0.55s;
+	text-align: center;
 }
 
-header {
+.dark {
+	background-color: #131516;
+	color: #eff8f3;
+}
+.dark a {
+	color: #00ff80;
+}
+
+.light {
+	color: #0f2417;
+	background: #fff;
+}
+
+h1 {
 	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 }
 
-.intro {
+a {
 	display: inline-block;
-	background-color: #0F2417;
-	color: #EFF8F3;
-	padding: 5px;
-	margin: 10px 0;
+	margin-top: 8px;
 }
 
-header > h1 {
-	flex: 1;
-	display: flex;
-	align-items: center;
+.thanos {
+	position: relative;
+	top: -20px;
 }
 
-p {
-	padding: 5px 0;
+.logo {
+	height: 40vmin;
+	pointer-events: none;
 }
 
-.night {
-	background-color: #0F2417;
-	color: #EFF8F3;
-	border-color: #EFF8F3;
+@media (prefers-reduced-motion: no-preference) {
+	.logo {
+		animation: logo-spin infinite 20s linear;
+	}
 }
 
-.night .intro {
-	background-color: #72777B;
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
