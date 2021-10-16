@@ -22,7 +22,7 @@ yarn add react-thanos
 ## Usage
 
 ```javascript
-import Thanos from "react-thanos";
+import { Thanos } from "react-thanos";
 
 <Thanos
   onSnap={() => console.log("I love you 3000! Decimate...") }
