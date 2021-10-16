@@ -1,36 +1,19 @@
 .thanos {
-  height: 80px;
-  width: 80px;
+  width: 43px;
+	height: 69px;
+	display: inline-block;
   position: relative;
-  cursor: pointer;
 }
 
 .gauntlet {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: visible;
   position: absolute;
 }
 
-.gauntlet.snap {
-  background: url("./assets/thanos_snap.png")
-    no-repeat 0 0;
-  animation-delay: 0.5s;
-}
-
-.gauntlet.snap-reverse {
-  background: url("./assets/thanos_time.png")
-    no-repeat 0 0;
-}
-
-.animate {
-  animation: gauntlet 1.5s steps(48);
-}
-
-@keyframes gauntlet {
-  0% {
-    background-position: 0px 0px;
-  }
-  100% {
-    background-position: -3840px 0px;
-  }
+.hide {
+  visibility: hidden;
 }
