@@ -1,10 +1,7 @@
-import { babel } from "@rollup/plugin-babel";
-import { nodeResolve } from "@rollup/plugin-node-resolve";
+import babel from "rollup-plugin-babel";
+import resolve from "rollup-plugin-node-resolve";
 import rebase from "rollup-plugin-rebase";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import transformRuntime from "@babel/plugin-transform-runtime";
-import presetEnv from "@babel/preset-env";
-import presetReact from "@babel/preset-react";
 
 import pkg from "./package.json";
 
@@ -14,28 +11,24 @@ export default {
 	input: "lib/index.js",
 	plugins: [
 		rebase({
-			assetFolder: "assets",
+			assetFolder: "assets"
 		}),
-		nodeResolve(),
 		babel({
-			babelrc: false,
-			babelHelpers: "runtime",
-			presets: [presetEnv, presetReact],
-			plugins: [transformRuntime],
+			exclude: "node_modules/**"
 		}),
-		peerDepsExternal(),
-		
+		resolve(),
+		peerDepsExternal()
 	],
 	output: [
 		{
 			file: pkg.module,
 			format: "es",
-			sourcemap,
+			sourcemap
 		},
 		{
 			file: pkg.main,
 			format: "cjs",
-			sourcemap,
-		},
-	],
+			sourcemap
+		}
+	]
 };

@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://i.imgur.com/1XVqHMa.png">
 <h1>react-thanos</h1>
-<p>React hooks implementation of Google's  <a href="https://www.youtube.com/watch?v=ybNtKpROwes"><strong>Thanos</strong></a> easter egg</p>
+<p>React hooks implementation of Google's  <a href="http://google.com/search?q=thanos"><strong>Thanos</strong></a> easter egg</p>
 </div>
 
 ## Prerequisite
@@ -22,7 +22,7 @@ yarn add react-thanos
 ## Usage
 
 ```javascript
-import { Thanos } from "react-thanos";
+import Thanos from "react-thanos";
 
 <Thanos
   onSnap={() => console.log("I love you 3000! Decimate...") }
@@ -33,7 +33,7 @@ import { Thanos } from "react-thanos";
 ## Examples
 See [examples](https://github.com/codeshifu/react-thanos/tree/master/examples) folder
 
-Live demo https://react-thanos.netlify.com/
+Live demo https://stupefied-keller-6c68c5.netlify.com/
 
 ## API (props)
 
@@ -62,4 +62,4 @@ used in this project were downloaded from Google. I own no rights to them.
 Feel free to send in contributions of any kind. All are welcome 🙂
 
 ## License
-**react-thanos** is licensed under [MIT](https://github.com/codeshifu/react-thanos/blob/master/license)
+**react-thanos** is licensed under [MIT](https://github.com/codeshifu/react-thanos/blob/master/LICENSE)
