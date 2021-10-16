@@ -33,7 +33,7 @@ import Thanos from "react-thanos";
 ## Examples
 See [examples](https://github.com/codeshifu/react-thanos/tree/master/examples) folder
 
-Live demo https://stupefied-keller-6c68c5.netlify.com/
+Live demo https://react-thanos.netlify.com/
 
 ## API (props)
 
