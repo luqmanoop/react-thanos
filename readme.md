@@ -6,7 +6,7 @@
 
 ## Prerequisite
 - [NodeJS](https://nodejs.org)
-- Project running [React **16.8**](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)
+- Project running >=[React **16.8**](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)
 ## Installation 📦
 
 ```bash
