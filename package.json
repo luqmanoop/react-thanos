@@ -12,7 +12,8 @@
 		"clean": "rimraf dist",
 		"bundle": "rollup -c",
 		"build": "npm-run-all clean bundle",
-		"release": "npm run build && np"
+		"release": "npm run build && np",
+		"test": "jest"
 	},
 	"engines": {
 		"node": ">=15.0.0"
@@ -48,17 +49,30 @@
 		"@babel/preset-react": "7.0.0",
 		"@rollup/plugin-babel": "5.3.0",
 		"@rollup/plugin-node-resolve": "13.0.5",
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/react": "^12.1.2",
+		"babel-jest": "^26.6.3",
+		"jest": "^27.2.5",
 		"np": "7.5.0",
 		"npm-run-all": "4.1.5",
-		"react": "16.8.6",
-		"react-dom": "16.8.6",
+		"react": "16.9",
+		"react-dom": "16.9",
+		"react-test-renderer": "16.8",
+		"regenerator-runtime": "^0.13.9",
 		"rimraf": "2.6.3",
 		"rollup": "2.58.0",
 		"rollup-plugin-peer-deps-external": "2.2.4",
 		"rollup-plugin-rebase": "3.6.9"
 	},
 	"peerDependencies": {
-		"react": "16.8.x",
-		"react-dom": "16.8.x"
+		"react": "16.9",
+		"react-dom": "16.9"
+	},
+	"jest": {
+		"moduleNameMapper": {
+			"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+			"\\.(css|less)$": "<rootDir>/__mocks__/fileMock.js"
+		},
+		"testEnvironment": "jsdom"
 	}
 }
