@@ -52,6 +52,7 @@ a {
 .logo {
 	height: 40vmin;
 	pointer-events: none;
+	width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
